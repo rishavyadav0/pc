@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Status Downloader</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent-color);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 { color: var(--primary-color); margin-bottom: 5px; }
+        h2 { color: var(--primary-color); margin-top: 30px; border-left: 4px solid var(--accent-color); padding-left: 10px; }
+        
+        .date-box {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .content-section {
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #d0e7f9;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 10px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="date-box">Last Updated: <span id="current-date"></span></div>
+        </header>
+
+        <section class="content-section">
+            <p>This Privacy Policy describes how your personal information is handled in our <strong>Status Downloader</strong> application. We take your privacy seriously and ensure that the app remains a secure utility tool.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>1. Information We Collect</h2>
+            <p><strong>Media Files:</strong> Our app requires access to your device's storage to read and save status media (images/videos). These files are processed locally on your device and are <strong>never</strong> uploaded to our servers.</p>
+            <p><strong>Technical Data:</strong> We may collect non-identifiable information such as device model, OS version, and app usage statistics to improve performance.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>2. Advertising & Third Parties</h2>
+            <div class="highlight-box">
+                <p>To keep this service free, we use third-party advertising networks (such as Google AdMob, AppLovin, or Amazon Ads). These partners may collect your <strong>Advertising ID</strong> to provide relevant ads.</p>
+            </div>
+            <p>Please review their respective privacy policies for more information on how they handle data.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>3. Permissions Used</h2>
+            <ul>
+                <li><strong>Storage/Media Access:</strong> Necessary to download and save statuses.</li>
+                <li><strong>Internet Access:</strong> Necessary to load advertisements.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>4. Legal Disclaimer</h2>
+            <p>This app is an independent utility and is <strong>not affiliated with, authorized, maintained, or sponsored by WhatsApp Inc. or any other social media platform.</strong> The user is solely responsible for the content they download and must respect the intellectual property rights of the original creators.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions regarding this Privacy Policy, you can contact us at: <br>
+            <strong>support@yourdomain.com</strong></p>
+        </section>
+
+        <footer>
+            &copy; <span id="year"></span> Status Downloader Tool. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript to handle dynamic dates
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
